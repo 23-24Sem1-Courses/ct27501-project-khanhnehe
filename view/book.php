@@ -16,7 +16,7 @@
     <div id="list_book" class="row mt-5">
         <?php
 foreach ($list_of_book as $value) {?>
-        <div class="col-md-3 col-6 list_item_book">
+        <div class="col-md-3 col-6 list_item_book mb-4">
             <a href="?action=book_details&id_of_book=<?php echo $value['id'] ?>" class="d-block">
                 <img src="<?php echo "../admin/upload/" . $value['img']; ?>" alt="">
             </a>

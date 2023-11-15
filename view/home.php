@@ -72,7 +72,7 @@
                     <p class="text-center price_of_new_book_home">2.400.000đ</p>
                 </div>
                 <div class="col-6 col-md-3 new_book_item_home">
-                    <a class="d-block" href="?action=book_details&id_of_book=40"><img src="../admin/upload/sherry.png"
+                    <a class="d-block" href="?action=book_details&id_of_book=40"><img src="../admin/upload/p.png"
                             alt=""></a>
                     <a href="?action=book_details&id_of_book=40"
                         class="d-block text-center mt-3 name_of_new_book_home">Daniel Wellington Sherry</a>

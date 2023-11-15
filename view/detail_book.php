@@ -36,10 +36,13 @@
             <?php if (isset($detail_of_book['nxb'])): ?>
             <p id="nxb_of_detail_book"><?php echo $detail_of_book['nxb']; ?></p>
             <?php endif;?>
-            <i class="far fa-clock"></i>
+            <?php if (isset($detail_of_book['author'])): ?>
+
+            <p id="nxb_of_detail_book">Tác giả: <?php echo $detail_of_book['author']; ?></p>
+            <?php endif;?>
             <hr>
             <?php if (isset($detail_of_book['price'])): ?>
-            <p id="price_of_detail_book" class="text-center">
+            <p id="price_of_detail_book">
                 <span><?php echo number_format($detail_of_book['price'], 0, ",", ".") . "đ"; ?></span>
             </p>
             <?php endif;?>
@@ -49,12 +52,12 @@
 
             <form id="form_add_into_cart" method="post" class="row mt-5" action="?action=cart">
                 <div class="col-3">
-                    <label for="amount_book_detail_book"
-                        style="color: #ffe020; font-size: 16px; font-weight: 600;">Số lượng</label>
+                    <label for="amount_book_detail_book" style="color: #ffe020; font-size: 16px; font-weight: 600;">Số
+                        lượng</label>
                 </div>
                 <div class="col-9">
-                    <input type="number" id="amount_book_detail_book" class="col-7 mx-sm-3" min="1"
-                        name="quantity" value="1">
+                    <input type="number" id="amount_book_detail_book" class="col-7 mx-sm-3" min="1" name="quantity"
+                        value="1">
                 </div>
                 <?php if (isset($detail_of_book['id'])): ?>
                 <input type="hidden" name="id_of_book" value="<?php echo $detail_of_book['id']; ?>">
