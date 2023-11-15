@@ -15,6 +15,8 @@
     border-bottom: 3px solid #bc1c22;
     font-size: 25px;
     display: flex;
+    padding-bottom: 10px;
+
 }
 
 a {
@@ -66,7 +68,7 @@ a {
             <h4 class="title-home mt-2"><span>SÁCH MỚI</span></h4>
             <div class="row mt-4" id="new_book_home">
                 <div class="col-6 col-md-3 new_book_item_home item-custom-child">
-                    <a class="d-block" href="?action=book_details&id_of_book=35">
+                    <a class="d-block" href="?action=book_details&id_of_book=108">
                         <img src="../admin/upload/dêmn.jpg" alt=""></a>
                     <a href="?action=book_details&id_of_book=108"
                         class="d-block text-center mt-3 name_of_new_book_home">DẾ MÈN PHIÊU LƯU KÝ</a>
@@ -80,9 +82,9 @@ a {
                     <p class="text-center price_of_new_book_home">36.000đ</p>
                 </div>
                 <div class="col-6 col-md-3 new_book_item_home item-custom-child">
-                    <a class="d-block" href="?action=book_details&id_of_book=40">
+                    <a class="d-block" href="?action=book_details&id_of_book=93">
                         <img src="../admin/upload/hancap.webp" alt=""></a>
-                    <a href="?action=book_details&id_of_book=40"
+                    <a href="?action=book_details&id_of_book=93"
                         class="d-block text-center mt-3 name_of_new_book_home">NHÂN VẬT HẠ CẤP TOMOZAKI - TẬP 6</a>
                     <p class="text-center price_of_new_book_home">99.900đ</p>
                 </div>

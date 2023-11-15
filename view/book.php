@@ -1,5 +1,5 @@
 <!-- done -->
-<title>Sản phẩm</title>
+<title>Books</title>
 <style>
 .item-custom-child {
     transition: border-color 0.3s ease;
@@ -22,7 +22,7 @@
     </nav>
 </div>
 <main class="container mt-3">
-    <h3 class="text-center" id="title_book"><span><?php echo mb_strtoupper($name_of_category); ?></span></h3>
+    <h3 id="title_about"><span><?php echo mb_strtoupper($name_of_category); ?></span></h3>
     <div id="list_book" class="row mt-5">
         <?php
 foreach ($list_of_book as $value) {?>
