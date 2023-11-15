@@ -1,5 +1,39 @@
 <!-- done -->
 <title>Chi tiết sản phẩm</title>
+<style>
+#price_of_detail_book {
+    background-color: white;
+    font-size: 30px;
+}
+
+#contain_detail_book {
+    background-color: white;
+    padding: 25px 15px;
+}
+
+#price_of_detail_book span {
+    font-weight: 900 !important;
+    color: #bc1c22 !important;
+    font-size: 30px;
+}
+
+#btn_add_into_cart {
+    background-color: #bc1c22;
+    margin-left: 15px;
+    margin-top: 25px;
+    width: 200px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+
+#amount_book_detail_book {
+    width: 80px;
+    border: 1px solid #c7c8c9;
+    border-radius: 4px;
+}
+</style>
 <div id="breadcrumb_background">
     <p id="title_breadcrumb" class="text-center">CHI TIẾT SẢN PHẨM</p>
     <nav aria-label="breadcrumb">
@@ -14,7 +48,7 @@
             <?php endif;?>
             <?php if (isset($detail_of_book['book_name'])): ?>
             <li class="breadcrumb-item active" aria-current="page"
-                style="color: #ffe020; font-weight: 600; font-size: 16px;">
+                style="color: #bc1c22; font-weight: 800; font-size: 18px;">
                 &nbsp;<?php echo $detail_of_book['book_name']; ?>
             </li>
             <?php endif;?>
@@ -52,7 +86,7 @@
 
             <form id="form_add_into_cart" method="post" class="row mt-5" action="?action=cart">
                 <div class="col-3">
-                    <label for="amount_book_detail_book" style="color: #ffe020; font-size: 16px; font-weight: 600;">Số
+                    <label for="amount_book_detail_book" style="color: #bc1c22; font-size: 16px; font-weight: 800;">Số
                         lượng</label>
                 </div>
                 <div class="col-9">

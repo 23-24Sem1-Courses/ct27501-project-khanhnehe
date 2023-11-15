@@ -174,16 +174,6 @@ header {
   position: relative;
 }
 
-.title_section_home span::before {
-  content   : "";
-  position  : absolute;
-  width     : 110px;
-  height    : 3px;
-  left      : 30%;
-  top       : 50px;
-  background: #ffe020;
-}
-
 .featured_books_item_home img {
   width  : 70%;
   margin : 0 auto;
@@ -269,9 +259,7 @@ header {
   margin : 0 auto;
 }
 
-#contain_detail_book {
-  padding: 25px 15px;
-}
+
 
 #brand_of_detail_book {
   font-size    : 12px;
@@ -279,32 +267,18 @@ header {
   margin-bottom: 5px;
   margin-top   : 15px;
 }
-#price_of_detail_book {
+/* #price_of_detail_book {
   background-color: #b81b21 !important;
 
 }
 
 #price_of_detail_book span {
-  /* font-weight: 900 !; */
+  font-weight: 900 !;
   color      : #bc1c22 !important;
-  /* font-size  : 30px; */
-}
+  font-size  : 30px;
+} */
 
-#amount_book_detail_book {
-  width        : 80px;
-  border       : 1px solid #ffe020;
-  border-radius: 4px;
-}
 
-#btn_add_into_cart {
-  background-color: #ffe020;
-  margin-left     : 15px;
-  margin-top      : 25px;
-  width           : 200px;
-  color           : #fff;
-  font-weight     : 600;
-  border-radius   : 0px;
-}
 
 /* ------------------------------------- */
 /* Cart */
@@ -614,7 +588,12 @@ footer {
 }
 
 #copyright_footer {
-  background-color: #ffe020;
-  padding         : 15px 0;
-  height          : 57px;
+    background-color: #bc1c22;
+    padding: 15px 0;
+    height: 57px;
+    color: white;
 }
+
+
+
+/* css cho ảnh khi hover */
