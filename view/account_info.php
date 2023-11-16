@@ -84,8 +84,8 @@ if (isset($result_all_orders)) {
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="staticBackdropLabel<?php echo $i; ?>">Are
-                                                you sure about that???</h1>
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel<?php echo $i; ?>">
+                                                Bạn đồng ý hủy đơn hàng không ?</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -94,7 +94,8 @@ if (isset($result_all_orders)) {
                                                 data-bs-dismiss="modal">Không</button>
                                             <button type="button" class="btn btn-primary"><a
                                                     id="agree_cancel_order_account_info"
-                                                    href="../public/index.php?action=account_info&agree_cancel_order&id_of_order_cancel=<?php echo $value['id']; ?>">Ừm</a></button>
+                                                    href="../public/index.php?action=account_info&agree_cancel_order&id_of_order_cancel=<?php echo $value['id']; ?>">Đồng
+                                                    ý</a></button>
                                         </div>
                                     </div>
                                 </div>
