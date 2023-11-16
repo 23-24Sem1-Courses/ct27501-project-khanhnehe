@@ -6,7 +6,7 @@ Học kỳ 1, Năm học 2023-2024
 
 **Họ tên SV 1**: Nguyễn Ngọc Khánh
 
-**MSSV 2**: B2104804
+**MSSV 2**: B2005671
 
 **Họ tên SV 2**:Nguyễn Thị Mỹ Hạnh
 
