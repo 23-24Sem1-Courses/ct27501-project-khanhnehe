@@ -11,16 +11,11 @@
 </div>
 <main class="container">
     <div class="row">
-        <div id="nav_account_info" class="col-md-3">
-            <div>Thông tin và liên hệ</div>
-            <a href="?action=change_account_info" class="d-block mt-3">Đổi thông tin người dùng</a>
-            <a href="?action=change_password" class="d-block mt-3">Đổi mật khẩu</a>
-        </div>
-        <div id="info_account_info" class="col-md-8 offset-md-1">
-            <h3>Thông tin</h3>
+        <div id="info_account_info" class="col-md-8">
+            <h3 class="" style="color: #ffe020; font-weight: 600; font-size: 25px;">Thông tin tài khoản</h3>
             <div class="row mt-3">
                 <div class="col-md-3">
-                    Họ và tên <span style="color: red;">*</span>
+                    Họ và tên:</span>
                 </div>
                 <div class="col-md-9">
                     <?php echo $result_account_info['full_name']; ?>
@@ -28,7 +23,7 @@
             </div>
             <div class="row mt-3">
                 <div class="col-md-3">
-                    Địa chỉ email <span style="color: red;">*</span>
+                    Địa chỉ email:</span>
                 </div>
                 <div class="col-md-9">
                     <?php echo $result_account_info['email']; ?>
@@ -36,7 +31,7 @@
             </div>
             <div class="row mt-3">
                 <div class="col-md-3">
-                    Số điện thoại <span style="color: red;">*</span>
+                    Số điện thoạ:</span>
                 </div>
                 <div class="col-md-9">
                     <?php echo $result_account_info['phone_number']; ?>
@@ -45,7 +40,7 @@
         </div>
     </div>
     <div class="row mt-3">
-        <h3 class="text-center">Các đơn hàng đã đặt</h3>
+        <h3 class="text-center" style=" font-weight: 600; font-size: 25px;">Các đơn hàng đã đặt</h3>
         <div class="table-responsive-xl" style="padding: 0px;">
             <table class="table table-bordered">
                 <thead class="table-success">
