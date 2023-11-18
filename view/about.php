@@ -1,12 +1,11 @@
 <!-- done -->
 <title>Giới thiệu</title>
 <div id="breadcrumb_background">
-    <p id="title_breadcrumb" class="text-center">HK về chúng tôi</p>
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb justify-content-center">
+        <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="?action=home">Trang chủ</a></li>&nbsp;
             <li class="breadcrumb-item active" aria-current="page"
-                style="color: #ffe020; font-weight: 600; font-size: 16px;">&nbsp;HK về chúng tôi</li>
+                style="color: #ffe020; font-weight: 600; font-size: 16px;">&nbsp;Giới thiệu</li>
         </ol>
     </nav>
 </div>

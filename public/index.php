@@ -52,7 +52,7 @@ if (isset($_GET['action'])) {
             include PATH_TO_FILE_PDO;
             if (isset($_GET['id_of_category'])) {
                 if ($_GET['id_of_category'] == 'all') {
-                    $name_of_category = 'TẤT CẢ SẢN PHẨM'; //tên của loại
+                    $name_of_category = 'TẤT CẢ SÁCH'; //tên của loại
                 } else {
                     $sql = "select * from category where id=?";
                     $stmt = $conn->prepare($sql);

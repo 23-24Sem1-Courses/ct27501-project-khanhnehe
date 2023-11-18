@@ -1,8 +1,8 @@
 <title><?php echo $result_account_info[1]; ?></title> <!-- dùng php chèn title là tên full_name -->
 <div id="breadcrumb_background">
-    <p id="title_breadcrumb" class="text-center">THÔNG TIN TÀI KHOẢN</p>
+    <p id="title_breadcrumb">THÔNG TIN TÀI KHOẢN</p>
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb justify-content-center">
+        <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="?action=home">Trang chủ</a></li>&nbsp;
             <li class="breadcrumb-item active" aria-current="page"
                 style="color: #ffe020; font-weight: 600; font-size: 16px;">&nbsp;Thông tin của tôi</li>

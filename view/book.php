@@ -17,9 +17,9 @@
 }
 </style>
 <div id="breadcrumb_background">
-    <p id="title_breadcrumb" class="text-center"><?php echo mb_strtoupper($name_of_category); ?></p>
+    <!-- <p id="title_breadcrumb"><?php echo mb_strtoupper($name_of_category); ?></p> -->
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb justify-content-center">
+        <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="?action=home">Trang chủ</a></li>&nbsp;
             <li class="breadcrumb-item active" aria-current="page"
                 style="color: #ffe020; font-weight: 600; font-size: 16px;">
