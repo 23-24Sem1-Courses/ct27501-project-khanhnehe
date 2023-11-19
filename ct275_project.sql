@@ -3,13 +3,17 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 18, 2023 lúc 03:36 PM
+-- Thời gian đã tạo: Th10 19, 2023 lúc 07:50 AM
 -- Phiên bản máy phục vụ: 10.4.28-MariaDB
 -- Phiên bản PHP: 8.2.4
+
+use ct275_project;
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
+
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -41,7 +45,8 @@ CREATE TABLE `account` (
 
 INSERT INTO `account` (`id`, `full_name`, `email`, `phone_number`, `pass_word`) VALUES
 (5, 'Admin', 'admin@gmail.com', '0966899548', '$2a$10$ChYX06lnvA02/xHdu15FPeCe/mFiWBnVQmCAmwDAKZXBq0mzg/xES'),
-(14, 'Nguyễn Khánh', 'nguyenngockhanhvthg@gmail.com', '0348144669', '$2y$10$1jwAysd1HE9Vv9VfqKGPBOMT5Ge5PYG3p04/WBZx0SRtsiYXRVAN6');
+(14, 'Nguyễn Khánh', 'nguyenngockhanhvthg@gmail.com', '0348144669', '$2y$10$1jwAysd1HE9Vv9VfqKGPBOMT5Ge5PYG3p04/WBZx0SRtsiYXRVAN6'),
+(15, 'Nguyễn Ngọc Khánh', 'nguyenngoc@gmail.com', '0348144678', '$2y$10$XMxz0RL7Q9ZHPvT.aQ1ZBu.ev9WDNmvDT9tENwqifn5c6b7t5LwO6');
 
 -- --------------------------------------------------------
 
@@ -155,10 +160,7 @@ CREATE TABLE `orders` (
 INSERT INTO `orders` (`id`, `full_name`, `address`, `phone_number`, `email`, `total`, `payment`, `status`) VALUES
 (51, 'Nguyễn Khánh', 'Mậu Thân, Ninh Kiều, Cần Thơ', '0348144669', 'nguyenngockhanhvthg@gmail.com', 224400, 'Thanh toán tiền mặt khi nhận hàng (COD)', 'Đang xử lý'),
 (52, 'Nguyễn Khánh', 'Mậu Thân, Ninh Kiều, Cần Thơ', '0348144669', 'nguyenngockhanhvthg@gmail.com', 109200, 'Thanh toán tiền mặt khi nhận hàng (COD)', 'Đã hủy'),
-(53, 'Nguyễn Khánh', 'Mậu Thân, Ninh Kiều, Cần Thơ', '0348144669', 'nguyenngockhanhvthg@gmail.com', 87000, 'Thanh toán khi nhận hàng (COD)', 'Đang xử lý'),
-(54, 'Nguyễn Khánh', 'Mậu Thân, Ninh Kiều, Cần Thơ', '0348144669', 'nguyenngockhanhvthg@gmail.com', 102900, 'Thanh toán khi nhận hàng (COD)', 'Đang xử lý'),
-(55, 'Nguyễn Khánh', '124 Nguyễn Văn cừ Cần thơ', '0348144669', 'nguyenngockhanhvthg@gmail.com', 84000, 'Thanh toán khi nhận hàng (COD)', 'Đang xử lý');
-
+(53, 'Nguyễn Khánh', 'Mậu Thân, Ninh Kiều, Cần Thơ', '0348144669', 'nguyenngockhanhvthg@gmail.com', 87000, 'Thanh toán khi nhận hàng (COD)', 'Đang xử lý');
 -- --------------------------------------------------------
 
 --
@@ -188,7 +190,11 @@ INSERT INTO `order_detail` (`id`, `book_name`, `book_img`, `price`, `amount`, `t
 (97, 'Chú Thuật Hồi Chiến - Tập Đặc Biệt', 'ck me.jpg', 79200, 1, 79200, 52),
 (98, 'NHỮNG TIA NẮNG ĐẦU TIÊN', 'tia.jpg', 57000, 1, 57000, 53),
 (99, 'ĐẤT RỪNG PHƯƠNG NAM', 'datrung.jpg', 72900, 1, 72900, 54),
-(100, 'Mashle - Tập 9', 'mas2.jpg', 27000, 2, 54000, 55);
+(100, 'Mashle - Tập 9', 'mas2.jpg', 27000, 2, 54000, 55),
+(101, 'Mashle - Tập 9', 'mas2.jpg', 27000, 2, 54000, 56),
+(102, 'Mashle - Tập 9', 'mas2.jpg', 27000, 2, 54000, 57),
+(103, 'TIỂU THUYẾT ONE PIECE - CHUYỆN CHƯA KỂ VỀ BĂNG MŨ RƠM', 'one2.jpg', 43200, 1, 43200, 58),
+(104, 'Nguyên Lý Marketing', 'mar.jpg', 799000, 1, 799000, 59);
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -234,7 +240,7 @@ ALTER TABLE `order_detail`
 -- AUTO_INCREMENT cho bảng `account`
 --
 ALTER TABLE `account`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT cho bảng `book`
@@ -252,13 +258,13 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT cho bảng `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT cho bảng `order_detail`
 --
 ALTER TABLE `order_detail`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
